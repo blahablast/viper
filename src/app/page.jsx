@@ -1,3 +1,9 @@
+import StatsSection from './components/home/stats-section/page'
+
 export default function Home() {
-  return <p className="underline">hello</p>
+  return (
+    <main>
+      <StatsSection />
+    </main>
+  )
 }
