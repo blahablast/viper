@@ -1,61 +1,90 @@
+// app/components/home/hero-section/page.js
 'use client'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 export default function HeroSection() {
   return (
-    <section className="min-h-screen pt-20 bg-gradient-to-b from-black via-red-950/20 to-black relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-center"
-        >
-          <motion.h1
-            initial={{ scale: 0.9 }}
-            animate={{ scale: 1 }}
-            className="text-6xl md:text-8xl font-bold text-white mb-6"
-          >
-            IN VIPER WE TRUST
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2 }}
-            className="text-xl md:text-2xl text-white/80 mb-12"
-          >
-            More than a meme, more than a derivative
-          </motion.p>
+    <section className="relative min-h-screen bg-gradient-to-b from-zinc-900 to-black">
+      {/* Navigation */}
+      <nav className="absolute top-0 w-full px-6 py-4 flex justify-between items-center">
+        <span className="text-2xl font-bold text-white">VIPER</span>
+        <div className="flex items-center gap-8">
+          <span className="text-white hover:text-gray-300 cursor-pointer">
+            MEMES
+          </span>
+          <span className="text-white hover:text-gray-300 cursor-pointer">
+            VIPERSWAP
+          </span>
+          <span className="text-white hover:text-gray-300 cursor-pointer">
+            STAKE
+          </span>
+          <button className="bg-red-600 hover:bg-red-700 px-6 py-2 rounded-full text-white font-bold transition-colors">
+            BUY VIPER
+          </button>
+        </div>
+      </nav>
 
-          <div className="flex justify-center gap-6">
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-red-600 text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-red-700 transition-colors"
-            >
-              Buy Now
-            </motion.button>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-white/10 backdrop-blur-sm text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-white/20 transition-colors"
-            >
-              Learn More
-            </motion.button>
-          </div>
+      <div className="max-w-7xl mx-auto px-4 h-screen flex flex-col items-center justify-center text-center">
+        {/* Logo */}
+        <motion.div
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.5 }}
+          className="w-full max-w-[400px] mb-12"
+        >
+          <Image
+            src="/assets/images/Viper_Head.svg"
+            alt="Viper Logo"
+            width={400}
+            height={400}
+            priority
+            className="relative z-10"
+          />
         </motion.div>
 
-        {/* We can add viper character animations here */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.4 }}
-          className="mt-20 relative"
+        {/* VIPER text */}
+        <motion.h1
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.2 }}
+          className="text-7xl font-bold text-white mb-6"
         >
-          {/* Placeholder for viper character - replace with SVG/image */}
-          <div className="h-64 w-full flex justify-center">
-            {/* We'll add the viper character here */}
-          </div>
+          VIPER
+        </motion.h1>
+
+        {/* Subtitle */}
+        <motion.p
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.3 }}
+          className="text-2xl text-gray-300 mb-12"
+        >
+          More than a meme, more than a memecoin
+        </motion.p>
+
+        {/* Buttons */}
+        <motion.div
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.4 }}
+          className="flex gap-6"
+        >
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="px-10 py-3 bg-red-600 text-white rounded-full font-bold text-lg hover:bg-red-700 transition-colors"
+          >
+            Buy Now
+          </motion.button>
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="px-10 py-3 bg-zinc-800 text-white rounded-full font-bold text-lg hover:bg-zinc-700 transition-colors"
+          >
+            Learn More
+          </motion.button>
         </motion.div>
       </div>
     </section>
