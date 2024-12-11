@@ -6,25 +6,6 @@ import Image from 'next/image'
 export default function HeroSection() {
   return (
     <section className="relative min-h-screen bg-gradient-to-b from-zinc-900 to-black">
-      {/* Navigation */}
-      <nav className="absolute top-0 w-full px-6 py-4 flex justify-between items-center">
-        <span className="text-2xl font-bold text-white">VIPER</span>
-        <div className="flex items-center gap-8">
-          <span className="text-white hover:text-gray-300 cursor-pointer">
-            MEMES
-          </span>
-          <span className="text-white hover:text-gray-300 cursor-pointer">
-            VIPERSWAP
-          </span>
-          <span className="text-white hover:text-gray-300 cursor-pointer">
-            STAKE
-          </span>
-          <button className="bg-red-600 hover:bg-red-700 px-6 py-2 rounded-full text-white font-bold transition-colors">
-            BUY VIPER
-          </button>
-        </div>
-      </nav>
-
       <div className="max-w-7xl mx-auto px-4 h-screen flex flex-col items-center justify-center text-center">
         {/* Logo */}
         <motion.div
