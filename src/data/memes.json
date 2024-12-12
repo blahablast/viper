@@ -1,127 +1,127 @@
 [
   {
     "id": "adam-pepe",
-    "src": "/public/assets/memes/adam-pepe.png",
+    "src": "/assets/memes/adam-pepe.png",
     "title": "Viper touching Pepe"
   },
   {
     "id": "airplane",
-    "src": "/public/assets/memes/airplane.png",
+    "src": "/assets/memes/airplane.png",
     "title": "Flying high"
   },
   {
     "id": "astronaut",
-    "src": "/public/assets/memes/astronaut.png",
-    "title": "Prepparing for moon"
+    "src": "/assets/memes/astronaut.png",
+    "title": "Preparing for moon"
   },
   {
     "id": "beach",
-    "src": "/public/assets/memes/beach.png",
+    "src": "/assets/memes/beach.png",
     "title": "Chillin at the beach"
   },
   {
     "id": "birth",
-    "src": "/public/assets/memes/birth.png",
+    "src": "/assets/memes/birth.png",
     "title": "Viper giving birth"
   },
   {
     "id": "bling",
-    "src": "/public/assets/memes/bling.png",
+    "src": "/assets/memes/bling.png",
     "title": "Viper blinging"
   },
   {
     "id": "celebrate",
-    "src": "/public/assets/memes/celebrate.png",
+    "src": "/assets/memes/celebrate.png",
     "title": "Viper celebrating"
   },
   {
     "id": "champ",
-    "src": "/public/assets/memes/champ.png",
+    "src": "/assets/memes/champ.png",
     "title": "Viper winning the fight"
   },
   {
     "id": "chess",
-    "src": "/public/assets/memes/chess.png",
+    "src": "/assets/memes/chess.png",
     "title": "Viper playing chess"
   },
   {
     "id": "cigar",
-    "src": "/public/assets/memes/cigar.png",
+    "src": "/assets/memes/cigar.png",
     "title": "Viper smoking cigar"
   },
   {
     "id": "climb",
-    "src": "/public/assets/memes/climb.png",
+    "src": "/assets/memes/climb.png",
     "title": "Viper climbing"
   },
   {
     "id": "coffee",
-    "src": "/public/assets/memes/coffee.png",
+    "src": "/assets/memes/coffee.png",
     "title": "Viper chilling in coffee"
   },
   {
     "id": "cut-ribbon",
-    "src": "/public/assets/memes/cut-ribbon.png",
+    "src": "/assets/memes/cut-ribbon.png",
     "title": "Viper cutting ribbon"
   },
   {
     "id": "elevator",
-    "src": "/public/assets/memes/elevator.png",
+    "src": "/assets/memes/elevator.png",
     "title": "Viper going up"
   },
   {
     "id": "flag",
-    "src": "/public/assets/memes/flag.png",
+    "src": "/assets/memes/flag.png",
     "title": "Viper flexing flag"
   },
   {
     "id": "flag-2",
-    "src": "/public/assets/memes/flag-2.png",
+    "src": "/assets/memes/flag-2.png",
     "title": "Viper taunting with Trump"
   },
   {
     "id": "garden",
-    "src": "/public/assets/memes/garden.png",
+    "src": "/assets/memes/garden.png",
     "title": "Viper gardening some green candles"
   },
   {
     "id": "grave",
-    "src": "/public/assets/memes/grave.png",
+    "src": "/assets/memes/grave.png",
     "title": "Viper mouring the loss of jeeters"
   },
   {
     "id": "hard-turn",
-    "src": "/public/assets/memes/hard-turn.png",
+    "src": "/assets/memes/hard-turn.png",
     "title": "Viper fomoing"
   },
   {
     "id": "horse",
-    "src": "/public/assets/memes/horse.png",
+    "src": "/assets/memes/horse.png",
     "title": "Viper sitting on a horse"
   },
   {
     "id": "plant",
-    "src": "/public/assets/memes/plant.png",
+    "src": "/assets/memes/plant.png",
     "title": "Viper growing a green candle in a pot"
   },
   {
     "id": "pool",
-    "src": "/public/assets/memes/pool.png",
+    "src": "/assets/memes/pool.png",
     "title": "Viper chilling in a pool"
   },
   {
     "id": "saylor",
-    "src": "/public/assets/memes/saylor.png",
+    "src": "/assets/memes/saylor.png",
     "title": "Viper chilling with Michael Saylor"
   },
   {
     "id": "sleeping-bull",
-    "src": "/public/assets/memes/sleeping-bull.png",
+    "src": "/assets/memes/sleeping-bull.png",
     "title": "Viper waiting for bull to awake"
   },
   {
     "id": "vip",
-    "src": "/public/assets/memes/vip.png",
+    "src": "/assets/memes/vip.png",
     "title": "Viper hanging in VIP"
   }
 ]
