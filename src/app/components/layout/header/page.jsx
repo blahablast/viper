@@ -17,6 +17,7 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <nav className="flex items-center justify-between">
+          {/* Logo */}
           <motion.div
             whileHover={{ scale: 1.05 }}
             className="flex items-center"
@@ -29,8 +30,8 @@ export default function Header() {
             </Link>
           </motion.div>
 
-          {/* Desktop Nav Links (hidden on small screens) */}
-          <div className="flex items-center gap-6">
+          {/* Desktop Nav Links: Only visible at >=640px */}
+          <div className="hidden sm:flex items-center gap-6">
             <NavLink href="/memes">MEMES</NavLink>
             <NavLink href="/viperswap">VIPERSWAP</NavLink>
             <NavLink href="/stake">STAKE</NavLink>
@@ -58,48 +59,50 @@ export default function Header() {
             </motion.button>
           </div>
 
-          {/* Mobile Hamburger Icon (shown on small screens) */}
-          <div className="sm:hidden flex items-center">
+          {/* Hamburger Icon: Only visible at <640px */}
+          <div className="block sm:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-white hover:text-gray-300 focus:outline-none"
             >
-              {isOpen ? <X /> : <Menu />}
+              {isOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
             </button>
           </div>
         </nav>
       </div>
 
-      {/* Mobile Nav Menu (visible only when isOpen is true) */}
+      {/* Mobile Nav Menu: Visible only when isOpen = true and <640px */}
       {isOpen && (
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="sm:hidden bg-black/90 backdrop-blur-sm"
+          className="sm:hidden bg-black/90 backdrop-blur-sm px-4 pt-2 pb-3 space-y-2"
         >
-          <div className="px-4 pt-2 pb-3 space-y-2">
-            <NavLink href="/memes">MEMES</NavLink>
-            <NavLink href="/viperswap">VIPERSWAP</NavLink>
-            <NavLink href="/stake">STAKE</NavLink>
+          <NavLink href="/memes">MEMES</NavLink>
+          <NavLink href="/viperswap">VIPERSWAP</NavLink>
+          <NavLink href="/stake">STAKE</NavLink>
 
-            {/* Theme toggle in Mobile Menu */}
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              onClick={() => setIsDark(!isDark)}
-              className="p-2 block w-full text-left rounded bg-white/60 hover:bg-white/50 transition-colors"
-            >
-              {isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
-            </motion.button>
+          {/* Theme Toggle in Mobile Menu */}
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            onClick={() => setIsDark(!isDark)}
+            className="p-2 block w-full text-left rounded bg-white/60 hover:bg-white/50 transition-colors text-black font-medium"
+          >
+            {isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+          </motion.button>
 
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-[#d01f36] hover:bgb-[#b91c31] px-6 py-2 rounded-full text-white font-bold transition-colors block w-full text-center"
-            >
-              BUY VIPER
-            </motion.button>
-          </div>
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="bg-[#d01f36] hover:bg-[#b91c31] px-6 py-2 rounded-full text-white font-bold transition-colors block w-full text-center"
+          >
+            BUY VIPER
+          </motion.button>
         </motion.div>
       )}
     </motion.header>
@@ -108,7 +111,10 @@ export default function Header() {
 
 const NavLink = ({ href, children }) => (
   <motion.div whileHover={{ y: -2 }}>
-    <Link href={href} className="text-white/90 hover:text-white font-medium">
+    <Link
+      href={href}
+      className="text-white/90 hover:text-white font-medium block"
+    >
       {children}
     </Link>
   </motion.div>
