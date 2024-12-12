@@ -1,3 +1,4 @@
+// app/components/home/stats-section/stat-card.js
 'use client'
 import { motion } from 'framer-motion'
 
@@ -8,7 +9,7 @@ export default function StatCard({ label, value }) {
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 flex flex-col items-center"
+      className="bg-[#131313] backdrop-blur-sm rounded-3xl p-6 flex flex-col items-center border border-red-900/20 shadow-[0_0_50px_-12px_rgba(180,0,0,0.25)]"
     >
       <motion.div
         initial={{ scale: 0 }}

@@ -11,8 +11,8 @@ export default function StatsSection() {
   ]
 
   return (
-    <section className="py-20 bg-gradient-to-b from-black to-red-900/20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default function BurnedSection() {
   return (
-    <section className="relative py-40 bg-neutral-950">
+    <section className="relative py-40">
       <div className="max-w-5xl mx-auto px-4">
         {/* Card Container */}
         <motion.div

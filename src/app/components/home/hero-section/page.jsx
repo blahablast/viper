@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen bg-[#0a0a0a]">
+    <section className="relative min-h-screen">
       <div className="max-w-7xl mx-auto px-4 h-screen flex flex-col items-center justify-center text-center">
         {/* Logo */}
         <motion.div
