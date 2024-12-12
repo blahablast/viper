@@ -30,7 +30,7 @@ export default function Header() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-red-600 text-white px-6 py-2 rounded-full font-bold hover:bg-red-700 transition-colors"
+              className="bg-[#d01f36] hover:bg-[#b91c31] px-6 py-2 rounded-full text-white font-bold transition-colors"
             >
               BUY VIPER
             </motion.button>
