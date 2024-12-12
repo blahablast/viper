@@ -35,7 +35,7 @@ export default function BurnedSection() {
             Similarly, adjust the tail:
             Increase width, adjust translation to position it nicely.
           */}
-          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-[50px] sm:translate-y-[52px] w-[250px] sm:w-[300px] z-20">
+          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-[43px] sm:translate-y-[52px] w-[250px] sm:w-[300px] z-20">
             <Image
               src="/assets/images/burn-tail.avif"
               alt="Snake Tail"
