@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --bg-color: #f3f3e0;
+  --text-color: #0a0a0a;
+
+  /* Button background and hover colors */
+  --btn-primary-bg: #ef4444; /* red-600 */
+  --btn-primary-bg-hover: #dc2626; /* red-700 */
+  --btn-secondary-bg: #27272a; /* zinc-800 */
+  --btn-secondary-bg-hover: #3f3f46; /* zinc-700 */
+
+  /* Button text colors */
+  --btn-text-primary: #ffffff; /* white */
+  --btn-text-secondary: #ffffff; /* white */
+}
+
+.dark {
+  --bg-color: #0a0a0a;
+  --text-color: #f3f3e0;
+
+  /* Button background and hover colors */
+  --btn-primary-bg: #dc2626; /* red */
+  --btn-primary-bg-hover: #b91c1c;
+  --btn-secondary-bg: #3f3f46; /* gray */
+  --btn-secondary-bg-hover: #52525b;
+
+  /* Button text colors */
+  --btn-text-primary: #ffffff; /* white */
+  --btn-text-secondary: #ffffff; /* white */
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}

@@ -30,7 +30,7 @@ export default function HeroSection() {
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.2 }}
-          className="text-7xl font-bold text-white mb-6"
+          className="text-7xl font-bold mb-6"
         >
           VIPER
         </motion.h1>
@@ -40,9 +40,9 @@ export default function HeroSection() {
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.3 }}
-          className="text-2xl text-gray-300 mb-12"
+          className="text-2xl --text-color mb-12"
         >
-          More than a meme, more than a memecoin
+          More than a meme, more than a derivative
         </motion.p>
 
         {/* Buttons */}
@@ -55,14 +55,18 @@ export default function HeroSection() {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-10 py-3 bg-red-600 text-white rounded-full font-bold text-lg hover:bg-red-700 transition-colors"
+            className="px-10 py-3 rounded-full font-bold text-lg transition-colors
+             bg-[var(--btn-primary-bg)] hover:bg-[var(--btn-primary-bg-hover)]
+             text-[var(--btn-text-primary)]"
           >
             Buy Now
           </motion.button>
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-10 py-3 bg-zinc-800 text-white rounded-full font-bold text-lg hover:bg-zinc-700 transition-colors"
+            className="px-10 py-3 rounded-full font-bold text-lg transition-colors
+             bg-[var(--btn-secondary-bg)] hover:bg-[var(--btn-secondary-bg-hover)]
+             text-[var(--btn-text-secondary)]"
           >
             Learn More
           </motion.button>

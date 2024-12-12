@@ -13,7 +13,7 @@ export default function Header() {
     <motion.header
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className="fixed w-full z-50 bg-black/80 backdrop-blur-sm"
+      className="fixed w-full z-50 backdrop-blur-sm"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <nav className="flex items-center justify-between">
@@ -24,7 +24,7 @@ export default function Header() {
           >
             <Link
               href="/"
-              className="text-2xl font-bold text-white flex items-center gap-2"
+              className="text-2xl font-bold flex items-center gap-2"
             >
               <div className="relative">VIPER</div>
             </Link>
@@ -44,16 +44,18 @@ export default function Header() {
               className="p-2 rounded-full bg-white/60 hover:bg-white/50 transition-colors"
             >
               {isDark ? (
-                <Sun className="w-5 h-5 text-white" />
+                <Sun className="w-5 h-5" />
               ) : (
-                <Moon className="w-5 h-5 text-white" />
+                <Moon className="w-5 h-5" />
               )}
             </motion.button>
 
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-[#d01f36] hover:bg-[#b91c31] px-6 py-2 rounded-full text-white font-bold transition-colors"
+              className="rounded-full font-bold text-lg transition-colors
+             bg-[var(--btn-primary-bg)] hover:bg-[var(--btn-primary-bg-hover)]
+             text-[var(--btn-text-primary)] px-6 py-2"
             >
               BUY VIPER
             </motion.button>
@@ -63,7 +65,7 @@ export default function Header() {
           <div className="block sm:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-white hover:text-gray-300 focus:outline-none"
+              className="hover:text-gray-300 focus:outline-none"
             >
               {isOpen ? (
                 <X className="w-6 h-6" />
@@ -99,7 +101,7 @@ export default function Header() {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-[#d01f36] hover:bg-[#b91c31] px-6 py-2 rounded-full text-white font-bold transition-colors block w-full text-center"
+            className="bg-[#d01f36] hover:bg-[#b91c31] px-6 py-2 rounded-full font-bold transition-colors block w-full text-center"
           >
             BUY VIPER
           </motion.button>
@@ -111,10 +113,7 @@ export default function Header() {
 
 const NavLink = ({ href, children }) => (
   <motion.div whileHover={{ y: -2 }}>
-    <Link
-      href={href}
-      className="text-white/90 hover:text-white font-medium block"
-    >
+    <Link href={href} className="hover:text-white font-medium block">
       {children}
     </Link>
   </motion.div>
