@@ -10,7 +10,7 @@ export default function MemesPage() {
   return (
     <section className="min-h-screen bg-gradient-to-b from-purple-900 via-black to-purple-900 py-16 px-6">
       {/* Hero Section */}
-      <header className=" pt-20 text-center text-white mb-12">
+      <header className="pt-20 text-center text-white mb-12">
         <h1 className="text-5xl font-bold mb-4">The Heart of Viper Memes 🐍</h1>
         <p className="text-lg text-gray-300">
           Laughs, burns, and everything in between
@@ -47,7 +47,7 @@ export default function MemesPage() {
         >
           <div className="relative max-w-3xl w-full px-4">
             <button
-              className="absolute top-4 left-4 text-white text-3xl"
+              className="absolute top-4 left-7 text-white text-3xl hover:text-gray-300 focus:outline-none transition-colors"
               onClick={() => setSelectedMeme(null)}
             >
               ✖
