@@ -13,12 +13,7 @@ export default function BurnedSection() {
           className="relative rounded-3xl border border-red-900/20 shadow-[0_0_50px_-12px_rgba(180,0,0,0.25)]"
         >
           {/* Top Snake Decoration */}
-          {/*
-            Using arbitrary values for translation and width:
-            For example, here we make the image 250px wide by using w-[250px].
-            We also position it exactly where we want using translate classes:
-            -translate-y-[80px] for mobile, and -translate-y-[100px] on small screens and up.
-          */}
+
           <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-[90px] sm:-translate-y-[107px] w-[250px] sm:w-[300px] z-20">
             <Image
               src="/assets/images/burn-head.avif"
@@ -31,10 +26,7 @@ export default function BurnedSection() {
           </div>
 
           {/* Bottom Snake Decoration */}
-          {/*
-            Similarly, adjust the tail:
-            Increase width, adjust translation to position it nicely.
-          */}
+
           <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-[43px] sm:translate-y-[52px] w-[250px] sm:w-[300px] z-20">
             <Image
               src="/assets/images/burn-tail.avif"
@@ -47,7 +39,7 @@ export default function BurnedSection() {
           </div>
 
           {/* Content Wrapper */}
-          {/* Adjust padding so content sits nicely between head and tail */}
+
           <div className="text-center px-6 sm:px-12 pt-32 sm:pt-48 pb-32 sm:pb-48 relative z-10">
             <div className="flex items-center justify-center gap-2 sm:gap-4 mb-4 sm:mb-8">
               <span className="text-xl sm:text-3xl">🔥</span>

@@ -16,7 +16,7 @@ export default function HeroSection() {
           className="w-full max-w-[400px] mb-12"
         >
           <Image
-            src="/assets/images/Viper_Head.svg"
+            src="/assets/images/viper-hero.png"
             alt="Viper Logo"
             width={400}
             height={400}
