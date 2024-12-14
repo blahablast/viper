@@ -19,7 +19,7 @@ export default function ViperLoreModal({ onClose }) {
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.95 }}
           onClick={(e) => e.stopPropagation()} // Prevents closing when clicking inside the modal
-          className="relative w-full max-w-2xl p-6 mx-4 rounded-3xl shadow-[0_0_30px_-8px_rgba(180,0,0,0.35)]"
+          className="relative w-full max-w-2xl p-6 mx-4 sm:mx-8 sm:p-8 md:max-w-xl lg:max-w-2xl rounded-3xl shadow-[0_0_30px_-8px_rgba(180,0,0,0.35)]"
           style={{
             backgroundColor: 'var(--bg-color)', // Dynamic background color
             color: 'var(--text-color)' // Dynamic text color
@@ -37,7 +37,7 @@ export default function ViperLoreModal({ onClose }) {
           </button>
 
           <h2
-            className="text-5xl font-bold mb-6 text-center"
+            className="text-3xl sm:text-5xl font-bold mb-4 sm:mb-6 text-center"
             style={{
               color: 'var(--text-color)' // Dynamic heading color
             }}
@@ -45,7 +45,7 @@ export default function ViperLoreModal({ onClose }) {
             The <span className="text-red-700">Viper&apos;s</span> Tale
           </h2>
           <div className="prose prose-lg max-w-none">
-            <p className="text-2xl mb-6 leading-relaxed text-justify">
+            <p className="text-lg sm:text-2xl mb-4 sm:mb-6 leading-relaxed text-justify">
               Ever since his inception,&nbsp;
               <span className="text-red-700 font-semibold">VIPER</span> has been
               living under the shadow of his big blue brother, but&nbsp;
@@ -55,7 +55,7 @@ export default function ViperLoreModal({ onClose }) {
               <span className="text-red-700 font-semibold">VIPER</span> has a
               heart of gold.
             </p>
-            <p className="text-2xl leading-relaxed text-justify">
+            <p className="text-lg sm:text-2xl leading-relaxed text-justify">
               He has risen from the ashes of his old master, born anew with a
               community as strong as iron.&nbsp;
               <span className="text-red-700 font-semibold">VIPER</span> has one
