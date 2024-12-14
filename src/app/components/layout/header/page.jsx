@@ -3,11 +3,14 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { useTheme } from '@/app/context/ThemeContext'
-import { Moon, Sun, Menu, X } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
+import ThemeToggleBtn from '@/app/context/ThemeToggleBtn'
 
 export default function Header() {
   const { isDark, setIsDark } = useTheme()
   const [isOpen, setIsOpen] = useState(false)
+
+  const toggleTheme = () => setIsDark(!isDark)
 
   return (
     <motion.header
@@ -37,18 +40,7 @@ export default function Header() {
             <NavLink href="/stake">STAKE</NavLink>
 
             {/* Theme Toggle */}
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              onClick={() => setIsDark(!isDark)}
-              className="p-2 rounded-full bg-white/60 hover:bg-white/50 transition-colors"
-            >
-              {isDark ? (
-                <Sun className="w-5 h-5" />
-              ) : (
-                <Moon className="w-5 h-5" />
-              )}
-            </motion.button>
+            <ThemeToggleBtn isDark={isDark} toggleTheme={toggleTheme} />
 
             <motion.button
               whileHover={{ scale: 1.05 }}
@@ -61,8 +53,12 @@ export default function Header() {
             </motion.button>
           </div>
 
-          {/* Hamburger Icon: Only visible at <640px */}
-          <div className="block sm:hidden">
+          {/* Hamburger Icon and Theme Toggle: Visible at <640px */}
+          <div className="flex sm:hidden items-center gap-4">
+            {/* Theme Toggle */}
+            <ThemeToggleBtn isDark={isDark} toggleTheme={toggleTheme} />
+
+            {/* Hamburger Menu */}
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="hover:text-gray-300 focus:outline-none"
@@ -87,16 +83,6 @@ export default function Header() {
           <NavLink href="/memes">MEMES</NavLink>
           <NavLink href="/viperswap">VIPERSWAP</NavLink>
           <NavLink href="/stake">STAKE</NavLink>
-
-          {/* Theme Toggle in Mobile Menu */}
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            onClick={() => setIsDark(!isDark)}
-            className="p-2 block w-full text-left rounded bg-white/60 hover:bg-white/50 transition-colors text-black font-medium"
-          >
-            {isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
-          </motion.button>
 
           <motion.button
             whileHover={{ scale: 1.05 }}
