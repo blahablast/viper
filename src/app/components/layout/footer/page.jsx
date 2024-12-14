@@ -10,7 +10,7 @@ export default function Footer() {
   ]
 
   return (
-    <footer className="relative py-10 border border-red-900/20 shadow-[0_0_30px_-10px_rgba(180,0,0,0.25)]mx-4">
+    <footer className="relative py-10 border-t border-red-900/30 shadow-[0_0_30px_-8px_rgba(180,0,0,0.35)]">
       <div className="max-w-7xl mx-auto px-4">
         {/* Nav Links */}
         <motion.div

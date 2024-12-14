@@ -10,7 +10,7 @@ export default function BurnedSection() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="relative rounded-2xl border border-red-900/20 shadow-[0_0_30px_-10px_rgba(180,0,0,0.25)]"
+          className="relative rounded-2xl border-0 border-red-900/30 shadow-[0_0_30px_-8px_rgba(180,0,0,0.35)]"
         >
           {/* Top Snake Decoration */}
           <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-[86px] sm:-translate-y-[115px] w-[240px] sm:w-[320px] z-20">

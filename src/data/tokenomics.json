@@ -1,0 +1,30 @@
+{
+  "totalSupply": "76,270,000,000",
+  "allocations": [
+    {
+      "name": "PASS HOLDERS",
+      "percentage": 50,
+      "description": "HOLDERS OF THE 2,222 VIPER PASS NFTS WERE AIRDROPPED 50% OF THE SUPPLY"
+    },
+    {
+      "name": "INITIAL LIQUIDITY",
+      "percentage": 40,
+      "description": "DEX INITIAL TOKENS DEPOSIT ALONG WITH AVAILABLE PASS MINT FUNDS"
+    },
+    {
+      "name": "DEVELOPMENT",
+      "percentage": 5,
+      "description": "FARMING, SMALL PARTNERSHIPS, PROJECT DEVELOPMENTS, INNOVATIONS"
+    },
+    {
+      "name": "RESERVED",
+      "percentage": 3,
+      "description": "CEX LISTING REQUIREMENTS, EXPANSION OPPORTUNITIES, LARGE PARTNERSHIPS"
+    },
+    {
+      "name": "AIRDROPS",
+      "percentage": 2,
+      "description": "MEMES, CONTESTS, MARKETING, ETC"
+    }
+  ]
+}
