@@ -1,4 +1,5 @@
 import Header from './components/layout/header/page'
+import Footer from './components/layout/footer/page'
 import { ThemeProvider } from './context/ThemeContext'
 import './globals.css'
 
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
         <ThemeProvider>
           <Header />
           <main className="min-h-screen">{children}</main>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
