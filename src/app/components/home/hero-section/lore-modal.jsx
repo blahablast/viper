@@ -51,8 +51,7 @@ export default function ViperLoreModal({ onClose }) {
               living under the shadow of his big blue brother, but&nbsp;
               <span className="text-red-700 font-semibold">VIPER</span> has his
               own tale (or tail) to tell... With fierce eyes of flame that can
-              pierce any degen&aspos;s soul and intimidate you into
-              buying,&nbsp;
+              pierce any degen&apos;s soul and intimidate you into buying,&nbsp;
               <span className="text-red-700 font-semibold">VIPER</span> has a
               heart of gold.
             </p>
