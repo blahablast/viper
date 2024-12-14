@@ -42,20 +42,21 @@ export default function ViperLoreModal({ onClose }) {
               color: 'var(--text-color)' // Dynamic heading color
             }}
           >
-            The <span className="text-red-700">Viper's</span> Tale
+            The <span className="text-red-700">Viper&apos;s</span> Tale
           </h2>
           <div className="prose prose-lg max-w-none">
-            <p className="text-2xl mb-6 leading-relaxed">
+            <p className="text-2xl mb-6 leading-relaxed text-justify">
               Ever since his inception,&nbsp;
               <span className="text-red-700 font-semibold">VIPER</span> has been
               living under the shadow of his big blue brother, but&nbsp;
               <span className="text-red-700 font-semibold">VIPER</span> has his
               own tale (or tail) to tell... With fierce eyes of flame that can
-              pierce any degen's soul and intimidate you into buying,&nbsp;
+              pierce any degen&aspos;s soul and intimidate you into
+              buying,&nbsp;
               <span className="text-red-700 font-semibold">VIPER</span> has a
               heart of gold.
             </p>
-            <p className="text-2xl leading-relaxed">
+            <p className="text-2xl leading-relaxed text-justify">
               He has risen from the ashes of his old master, born anew with a
               community as strong as iron.&nbsp;
               <span className="text-red-700 font-semibold">VIPER</span> has one

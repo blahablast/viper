@@ -37,7 +37,7 @@ export default function HeroSection() {
             transition={{ delay: 0.2 }}
             className="text-7xl font-bold mb-6"
           >
-            <span className="text-red-700">VIPER</span>
+            In <span className="text-red-700">VIPER</span> We Trust!
           </motion.h1>
 
           {/* Subtitle */}
