@@ -45,24 +45,26 @@ export default function ViperLoreModal({ onClose }) {
             The <span className="text-red-700">Viper's</span> Tale
           </h2>
           <div className="prose prose-lg max-w-none">
-            <p className="text-2xl mb-6">
-              Ever since his inception,{' '}
-              <span className="text-red-700">VIPER</span> has been living under
-              the shadow of his big blue brother, but{' '}
-              <span className="text-red-700">VIPER</span> has his own tale (or
-              tail) to tell... With fierce eyes of flame that can pierce any
-              degen's soul and intimidate you into buying,{' '}
-              <span className="text-red-700">VIPER</span> has a heart of gold.
+            <p className="text-2xl mb-6 leading-relaxed">
+              Ever since his inception,&nbsp;
+              <span className="text-red-700 font-semibold">VIPER</span> has been
+              living under the shadow of his big blue brother, but&nbsp;
+              <span className="text-red-700 font-semibold">VIPER</span> has his
+              own tale (or tail) to tell... With fierce eyes of flame that can
+              pierce any degen's soul and intimidate you into buying,&nbsp;
+              <span className="text-red-700 font-semibold">VIPER</span> has a
+              heart of gold.
             </p>
-            <p className="text-2xl">
+            <p className="text-2xl leading-relaxed">
               He has risen from the ashes of his old master, born anew with a
-              community as strong as iron.{' '}
-              <span className="text-red-700">VIPER</span> has one goal and that
-              is to crush red candles into oblivion.{' '}
-              <span className="text-red-700">VIPER</span> has arrived and is
-              back with a vengeance. This is a call to all Degens across the
-              globe. Unite, and in <span className="text-red-700">VIPER</span>{' '}
-              we trust!
+              community as strong as iron.&nbsp;
+              <span className="text-red-700 font-semibold">VIPER</span> has one
+              goal and that is to crush red candles into oblivion.&nbsp;
+              <span className="text-red-700 font-semibold">VIPER</span> has
+              arrived and is back with a vengeance. This is a call to all Degens
+              across the globe. Unite, and in{' '}
+              <span className="text-red-700 font-semibold">VIPER</span>
+              &nbsp;we trust!
             </p>
           </div>
         </motion.div>
