@@ -1,5 +1,5 @@
 'use client'
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { useTheme } from '@/app/context/ThemeContext'
@@ -9,8 +9,22 @@ import ThemeToggleBtn from '@/app/context/ThemeToggleBtn'
 export default function Header() {
   const { isDark, setIsDark } = useTheme()
   const [isOpen, setIsOpen] = useState(false)
+  const menuRef = useRef(null) // Reference for the menu
 
   const toggleTheme = () => setIsDark(!isDark)
+
+  // Close menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsOpen(false)
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [])
 
   return (
     <motion.header
@@ -36,8 +50,8 @@ export default function Header() {
           {/* Desktop Nav Links: Only visible at >=640px */}
           <div className="hidden sm:flex items-center gap-6">
             <NavLink href="/memes">MEMES</NavLink>
-            <NavLink href="/viperswap">VIPERSWAP</NavLink>
-            <NavLink href="/stake">STAKE</NavLink>
+            <NavLink href="/">VIPERSWAP</NavLink>
+            <NavLink href="/">STAKE</NavLink>
 
             {/* Theme Toggle */}
             <ThemeToggleBtn isDark={isDark} toggleTheme={toggleTheme} />
@@ -76,13 +90,29 @@ export default function Header() {
       {/* Mobile Nav Menu: Visible only when isOpen = true and <640px */}
       {isOpen && (
         <motion.div
+          ref={menuRef} // Attach the ref to the menu container
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="sm:hidden bg-black/90 backdrop-blur-sm px-4 pt-2 pb-3 space-y-2"
+          className="sm:hidden text-xl backdrop-blur-sm px-4 pt-2 pb-3 space-y-4 flex flex-col items-center"
         >
-          <NavLink href="/memes">MEMES</NavLink>
-          <NavLink href="/viperswap">VIPERSWAP</NavLink>
-          <NavLink href="/stake">STAKE</NavLink>
+          <NavLink
+            href="/memes"
+            onClick={() => setIsOpen(false)} // Close menu on link click
+          >
+            MEMES
+          </NavLink>
+          <NavLink
+            href="/"
+            onClick={() => setIsOpen(false)} // Close menu on link click
+          >
+            VIPERSWAP
+          </NavLink>
+          <NavLink
+            href="/"
+            onClick={() => setIsOpen(false)} // Close menu on link click
+          >
+            STAKE
+          </NavLink>
 
           <motion.button
             whileHover={{ scale: 1.05 }}
@@ -97,9 +127,13 @@ export default function Header() {
   )
 }
 
-const NavLink = ({ href, children }) => (
+const NavLink = ({ href, children, onClick }) => (
   <motion.div whileHover={{ y: -2 }}>
-    <Link href={href} className="hover:text-white font-medium block">
+    <Link
+      href={href}
+      className="hover:text-white font-medium block text-center"
+      onClick={onClick}
+    >
       {children}
     </Link>
   </motion.div>

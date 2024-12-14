@@ -5,8 +5,8 @@ import Link from 'next/link'
 export default function Footer() {
   const navLinks = [
     { name: 'Memes', href: '/memes' },
-    { name: 'Viperswap', href: '/viperswap' },
-    { name: 'Stake', href: '/stake' }
+    { name: 'Viperswap', href: '/' },
+    { name: 'Stake', href: '/' }
   ]
 
   return (
