@@ -43,7 +43,9 @@ export default function Header() {
               href="/"
               className="text-2xl font-bold flex items-center gap-2"
             >
-              <div className="relative">VIPER</div>
+              <div className="relative">
+                <span className="text-red-700">VIPER</span>
+              </div>
             </Link>
           </motion.div>
 

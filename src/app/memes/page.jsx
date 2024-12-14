@@ -11,7 +11,7 @@ export default function MemesPage() {
     <section className="min-h-screen bg-gradient-to-b from-purple-900 via-black to-purple-900 py-16 px-6">
       {/* Hero Section */}
       <header className="pt-20 text-center text-white mb-12">
-        <h1 className="text-5xl font-bold mb-4">The Heart of Viper Memes 🐍</h1>
+        <h1 className="text-5xl font-bold mb-4">The Heart of Viper🐍</h1>
         <p className="text-lg text-gray-300">
           Laughs, burns, and everything in between
         </p>
